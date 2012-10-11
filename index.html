@@ -3,11 +3,14 @@
  <head> 
   <meta charset="utf-8" /> 
   <meta http-equiv="X-UA-Compatible" content="chrome=1" /> 
-  <link href="favicon.ico" rel="short icon" type="image/x-icon" /> 
+  <link href="favicon.ico" rel="short icon" type="image/x-icon" />
+  <link href="stylesheets/lightbox.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet" type="text/css" /> 
   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" /> 
   <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" /> 
   <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" /> 
+  <script src="javascripts/jquery-1.7.2.min.js"></script>
+  <script src="javascripts/lightbox.js"></script>
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]--> 
@@ -27,9 +30,80 @@
     <section id="main_content"> 
      <h3>Welcome to ToyhouseChina</h3> 
      <p>Introduction to ToyhouseChina. <br /> <a href="http://toyhouse.cc/">Toyhouse</a> </p> 
-     <h3>Declaration</h3> 
-     <p></p> 
-     <h3>Authors and Contributors</h3> 
+     <h3>Declaration</h3>
+     <h4>Our Workflow</h4>
+     <p>
+      The following graph tells how we collaborate with each other. If you can not understand it, please start leaning git and github. After learning, if you still can not understand, just find a window or a wall. You know it.
+      <br />
+      <a href="./images/workflow.png" rel="lightbox" title="toyhouse's workflow"><img src="images/workflow.png" alt="toyhouse's workflow" /></a>
+    </p>
+    <h4>Organizations must DO</h4>
+    <p>
+      <ul>
+        <li>Write <strong>Wiki</strong> for any features you add to repos.</li>
+        <li>Manage your teams.</li>
+        <li>Pull Request to ToyhouseChina when your repos are stable.</li>
+      </ul>
+    </p>
+     <h4>Right way for Organizations</h4>
+     <p>
+      <ul>
+        <li>
+          Always fork repos from Toyhousechina.
+          <a href="./images/rightfork.png" rel="lightbox" title="right fork"><img src="./images/rightfork.png" alt="fork toyhousechina" /></a>
+        </li>
+        <li>
+          Assign repos to proper teams in your organization (actually, there only two teams: <strong>owners</strong> and <strong>TeamMembers</strong>).
+        </li>
+        <li>Give the right rights for each team.</li>
+        <li>Take the <strong>System Architecture</strong> organization as an example.
+          <br />
+          <a href="./images/team.png" rel="lightbox" title="team"><img src="./images/team.png" alt="team" /></a>
+          <a href="./images/team_mana.png" rel="lightbox" title="team management"><img src="./images/team_mana.png" alt="team management" /></a>
+          </li>
+      </ul>
+     </p>
+     <h4>Right way for Individuals</h4>
+     <p>
+      <ul>
+        <li>You <strong>can</strong> fork from ToyhouseChina individually <strong>BUT</strong> we won't merge for you. If you fork repos of your own organizations, please go to your team leader and ask him or her to assign repos to you. Actually, there is no need for individuals to fork repos because you should be assigned some repos.
+          <br />
+          <a href="./images/rightandwrongway.png" rel="lightbox" title="right and wrong way"><img src="./images/rightandwrongway.png" alt="right and wrong way" /></a>
+        </li>
+        <li>You <strong>should</strong> use the <strong>assigned</strong> repo by your organization and make sure that you have <strong>pull & push</strong> rights, otherwise, just go to your team leader for the rights.</li>
+      </ul>
+      <h4>A Finished Example</h4>
+      <p>
+        <ul>
+          <li>Your Organization should have the following four repos:
+            <ol>
+              <li>Your Organization Name/<strong>LearningGit-GitHub</strong></li>
+              <li>Your Organization Name/<strong>Courseware</strong></li>
+              <li>Your Organization Name/<strong>ToyhouseDatabase</strong></li>
+              <li>Your Organization Name/<strong>test</strong></li>
+            </ol>
+            <a href="./images/repos.png" rel="lightbox" title="four repos"><img src="./images/repos.png" alt="repos" /></a>
+            <br />
+            Each repo has its own function, you can open it and read the README.md file or the wiki.
+          </li>
+          <li>Organizations' teams should be like the following:
+            <a href="./images/team.png" rel="lightbox" title="team"><img src="./images/team.png" alt="team" /></a>
+          </li>
+          <li>
+            Organizations should assign repos like this:
+            <a href="./images/team_repo.png" rel="lightbox" title="team repos"><img src="./images/team_repo.png" alt="team_repo" /></a>
+          </li>
+          <li>When you open your github client, you should have two accounts, one is yourself and the other is the organization you are in. Maybe like this:
+            <a href="./images/client.png" rel="lightbox" title="client"><img src="./images/client.png" alt="github client" /></a>
+            <i>Notes:</i> I am in all the organizations thus I have so many accounts. What you should see is just two.
+          </li>
+          <li>
+            You work locally with the organization account, it has all the repos which are assigned to you with pull and push rights (i.e. read and write rights).
+          </li>
+        </ul>
+      </p>
+     </p>
+     <h3>Author</h3> 
      <p><a href="http://new.godtao.tk/">@pantaovay</a></p> 
      <h3>Support or Contact</h3> 
      <p><a href="mailto:toyhouse.database@gmail.com">toyhouse.database@gmail.com</a></p> 
@@ -57,68 +131,8 @@
       Copyright &copy; 
      <a href="http://toyhouse.cc/">Toyhouse</a>. Any question, contact 
      <a href="mailto:toyhouse.database@gmail.com">toyhouse.database@gmail.com</a>. 
-    </footer> 
-    <meta charset="utf-8" /> 
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" /> 
-    <link href="favicon.ico" rel="short icon" type="image/x-icon" /> 
-    <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet" type="text/css" /> 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" /> 
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" /> 
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" /> 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]--> 
-    <title>Toyhousechina</title> 
-    <div id="container"> 
-     <div class="inner"> 
-      <header> 
-       <a href="http://toyhouse.cc/"><img src="images/logo.png" alt="toyhouse" width="300" height="88" /></a> 
-       <h1>ToyhouseChina</h1> 
-      </header> 
-      <section id="downloads" class="clearfix"> 
-       <a href="https://github.com/ToyhouseChina" id="view-on-github" class="button"><span>View on GitHub</span></a> 
-      </section> 
-      <hr /> 
-      <section id="main_content"> 
-       <h3>Welcome to ToyhouseChina</h3> 
-       <p>Introduction to ToyhouseChina. <br /> <a href="http://toyhouse.cc/">Toyhouse</a> </p> 
-       <h3>Declaration</h3> 
-       <p></p> 
-       <h3>Authors and Contributors</h3> 
-       <p><a href="http://new.godtao.tk/">@pantaovay</a></p> 
-       <h3>Support or Contact</h3> 
-       <p><a href="mailto:toyhouse.database@gmail.com">toyhouse.database@gmail.com</a></p> 
-       <section> 
-        <div id="disqus_thread"></div> 
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'toyhousechina'; // required: replace example with your forum shortname
-
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script> 
-        <noscript>
-          Please enable JavaScript to view the 
-         <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a> 
-        </noscript> 
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
-       </section> 
-      </section> 
-      <footer>
-        Copyright &copy; 
-       <a href="http://toyhouse.cc/">Toyhouse</a>. Any question, contact 
-       <a href="mailto:toyhouse.database@gmail.com">toyhouse.database@gmail.com</a>. 
-      </footer> 
-     </div> 
-    </div> 
-    <!-- JiaThis Button BEGIN --> 
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1349095768763915&amp;move=0&amp;btn=r2.gif" charset="utf-8"></script> 
-    <!-- JiaThis Button END --> 
-   </div> 
+    </footer>
+    </div>
   </div> 
   <!-- JiaThis Button BEGIN --> 
   <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1349095768763915&amp;move=0&amp;btn=r2.gif" charset="utf-8"></script> 
